@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #6a5acd;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: #6a5acd;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.features {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.feature {
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}

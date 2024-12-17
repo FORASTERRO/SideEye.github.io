@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideEye - Anonymous Chat App</title>
+    <link href="assets/output.css" rel="stylesheet">
+    <style>
+        /* Fondo con Blur Global */
+        .bg-fire-blur {
+            background: url('assets/images/Fire.png') center/cover no-repeat;
+            filter: blur(8px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        /* Espaciado adicional entre secciones */
+        .section-spacing {
+            margin: 4rem 0; /* Espacio entre secciones */
+        }
+    </style>
+</head>
+<body class="bg-black text-white font-sans">
+
+    <!-- Fondo Blur Persistente -->
+    <div class="bg-fire-blur"></div>
+
+    <!-- Fixed Header -->
+    <header class="fixed top-0 w-full flex justify-between items-center px-8 py-4 bg-black bg-opacity-90 z-10">
+        <!-- Logo -->
+        <div>
+            <img src="assets/images/Fire.png" alt="SideEye Logo" class="h-10">
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="flex gap-8">
+            <a href="#" class="text-white hover:text-gray-300">blog</a>
+            <a href="#" class="text-white hover:text-gray-300">jobs</a>
+            <a href="#" class="border-2 border-white px-4 py-1 rounded-full hover:bg-white hover:text-black transition">get SideEye</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative flex flex-col items-center justify-center h-screen text-center section-spacing">
+        <div class="hero-content">
+            <h1 class="text-5xl font-bold mb-4 opacity-0 animate-fade-in">Welcome to SideEye App</h1>
+            <p class="text-xl mb-6 opacity-0 animate-fade-in delay-300">Connect anonymously. Make friends. Have fun.</p>
+            <a href="#" class="bg-white text-black font-semibold py-2 px-6 rounded-full hover:bg-gray-300 transition animate-bounce">
+                Download on the App Store
+            </a>
+        </div>
+    </section>
+
+    <!-- Section: Why SideEye -->
+    <section class="relative flex items-center justify-center px-8 section-spacing">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto bg-black bg-opacity-70 p-8 rounded-lg shadow-lg">
+            <!-- Columna Izquierda: Texto con animación -->
+            <div class="flex flex-col justify-center opacity-0 animate-fade-in delay-300">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 animate-pulse">Why SideEye?</h2>
+                <div class="mb-6">
+                    <h3 class="text-2xl font-semibold mb-2">Anonymous & Safe</h3>
+                    <p class="text-gray-300">Chat with others while staying completely anonymous.</p>
+                </div>
+                <div>
+           
+           
+           
+                    <h3 class="text-2xl font-semibold mb-2">Fun Mechanics</h3>
+                    <p class="text-gray-300">Engage with interactive and fun activities to build new connections.</p>
+                </div>
+            </div>
+
+            <!-- Columna Derecha: Imagen con fade-in -->
+            <div class="flex justify-center items-center opacity-0 animate-fade-in delay-500">
+                <img src="assets/images/MockUp.png" alt="SideEye Mockup" class="max-w-full h-auto rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-black bg-opacity-90 text-gray-400">
+        <p>&copy; 2024 SideEye. Launching January 2024!</p>
+    </footer>
+
+</body>
+</html>
